@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <!-- Autor -->
+    <meta name="author" content="KLEBER ROSA DE SOUSA"/>
+    <!-- Mecanismo de busca -->
+    <meta name="robots" content="index, follow">
+    <!-- palavras chaves para mecanismos de buscar -->
+    <meta name="keywods" content="kleber, senai, front-end, imc, calcualar peso, indice, massa, corporal">
+    <meta name="descripition" content="Página que calcula o índice de massa corpotal (IMC) do usuário">
+    <!-- mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo da Pagina -->
+    <title>Calculando IMC</title>
+    <!-- Css Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
+
+  </head>
+  <body data-bs-theme="dark">
+      <!-- NavBar -->
+      <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="imagens/icone.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+               IMC- Índice de Massa Corporal
+              </a>
+            </div>
+        </nav>
+      </header>
+      <!-- Fim do NavBar -->
+      <!-- Corpo da Página -->
+      <main class="mt-5">
+          <div class="container">
+            <div class="d-flex justify-content-center">
+                <form action="">
+                    <section class="row">
+                        <div class="mb-3">
+                            <label for="peso" class="form-label">Peso</label>
+                            <input type="text" class="form-control" id="peso" placeholder="Em kg">
+                          </div>
+                    </section>
+                    <section class="row">
+                        <div class="mb-3">
+                            <label for="altura" class="form-label">Altura</label>
+                            <input type="text" class="form-control" id="altura" placeholder="Em Metros">
+                          </div>
+                    </section>
+                    <section class="row mt-5">
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-outline-primary col-12">Calcular IMC</button>
+                          </div>
+                    </section>
+                </form>
+            </div>
+            <hr>
+           <div class="d-flex justify-content-center">
+            <h3> Seu IMC é :</h3>
+           </div>
+           <div class="d-flex justify-content-center">
+            <h2 id="result"> </h2>
+           </div>
+           <div class="d-flex justify-content-center">
+            <h3 id="diag"> </h3>
+           </div>
+          </div>
+      </main>
+      <!-- Fim do Corpo da Página -->
+
+    <!-- Js BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Meu JS -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
